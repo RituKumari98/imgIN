@@ -21,17 +21,20 @@ header {
 }
 
 .navbar {
-  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   padding: 14px;
+  background-color: rgb(72, 70, 70);
+  border-radius: 10px;
 }
 
 .logo-img{
-    height: 50px;
-    width: 50px;
+    height: 47px;
+    width: 47px;
+    border-radius: 30%;
+    margin-right: 10px;
 }
 
 
@@ -42,6 +45,20 @@ header {
   gap: 30px;
   right: 20px;
 }
+.footer .menu-links{
+    display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  right: 20px;
+}
+
+.footer .menu-links li a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s ease;    
+}
 
 .navbar .menu-links li a {
   color: #fff;
@@ -50,11 +67,11 @@ header {
   transition: 0.2s ease;
 }
 
-.navbar .menu-links li a:hover {
+.navbar .menu-links .footer li a:hover {
   color: #1dbf73;
 }
 
-.navbar .menu-links .join-btn a {
+.navbar .menu-links .footer a {
   border: 1px solid #fff;
   padding: 8px 15px;
   border-radius: 4px;
@@ -62,7 +79,6 @@ header {
 
 .img-generator-sec {
   height: 100vh;
-  background-image: url("images/hero-img.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -89,6 +105,11 @@ header {
     position: absolute;
     top: 20px;
     left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #1a75eb;
+    font-size: x-large;
 }
 .img-generator-sec .search-form {
   height: 48px;
@@ -97,6 +118,7 @@ header {
   margin-top: 30px;
   border-radius: 4px;
   overflow: hidden;
+  gap: 10px;
 
 }
 
@@ -160,9 +182,20 @@ header {
   cursor: pointer;
   font-size: 1.7rem;
 }
+footer{
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 14px;
+    background-color: rgb(72, 70, 70);
+    border-radius: 10px;
+
+}
 
 @media screen and (max-width: 900px) {
   header.show-mobile-menu::before {
+    min-width: 285px;
     content: "";
     height: 100%;
     width: 100%;
@@ -233,6 +266,12 @@ header {
     margin-top: 10px;
     border-radius: 4px;
     width: 100%;
+    font-size: auto;
+  }
+    .logo-img{
+        height: 57px;
+        width: 53.94px;
+        border-radius: 20%;
   }
 
 
