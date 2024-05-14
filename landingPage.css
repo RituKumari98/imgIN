@@ -1,0 +1,239 @@
+/* Importing Google font - Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background: #1B1B1D;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 14px;
+}
+
+.logo-img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.navbar .menu-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  right: 20px;
+}
+
+.navbar .menu-links li a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar .menu-links li a:hover {
+  color: #1dbf73;
+}
+
+.navbar .menu-links .join-btn a {
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+.img-generator-sec {
+  height: 100vh;
+  background-image: url("images/hero-img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.img-generator-sec .content {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  width: 100%;
+
+
+}
+
+.img-generator-sec .content h1 {
+  color: #fff;
+  font-size: 3rem;
+  max-width: 630px;
+  line-height: 65px;
+}
+.navbar .logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.img-generator-sec .search-form {
+  height: 48px;
+  display: flex;
+  max-width: 630px;
+  margin-top: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+
+.img-generator-sec .search-form input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  border-radius: 4px 0 0 4px;
+  background: #fff;
+  color: #000;
+
+}
+
+.img-generator-sec .search-form button {
+  height: 100%;
+  width: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1dbf73;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.2s ease;
+
+}
+
+.img-generator-sec .search-form button:hover {
+  background: #19a463;
+}
+
+.img-generator-sec .tags li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 12px;
+  border-radius: 50px;
+  transition: 0.2s ease;
+}
+
+.img-generator-sec .tags li a:hover {
+  color: #000;
+  background: #fff;
+}
+
+.navbar #hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.7rem;
+}
+
+.navbar #close-menu-btn {
+  position: absolute;
+  display: none;
+  color: #000;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 900px) {
+  header.show-mobile-menu::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .menu-links {
+    height: 100vh;
+    max-width: 300px;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    display: block;
+    padding: 75px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar .menu-links li {
+    margin-bottom: 30px;
+  }
+
+  .navbar .menu-links li a {
+    color: #000;
+    font-size: 1.1rem;
+  }
+
+  .navbar :is(#close-menu-btn, #hamburger-btn) {
+    display: block;
+  }
+
+  .img-generator-sec {
+    background: none;
+  }
+
+  .img-generator-sec .content {
+    margin: 0 auto 80px;
+  }
+
+  .img-generator-sec .content :is(h1, .search-form) {
+    max-width: 100%;
+  }
+
+  .img-generator-sec .content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 55px;
+  }
+
+  .img-generator-sec .search-form {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .img-generator-sec .search-form input {
+    border-radius: 4px;
+  }
+  
+  .img-generator-sec .search-form button {
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>imgIN - AI image Generator</title>
+  <link rel="stylesheet" href="landingPage.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="imgIN Logo" class="logo-img">
+              </a>
+        </ul>
+      
+        <ul class="menu-links">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Sign In</a></li>
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="img-generator-sec">
+    <div class="content">
+        <h1>Transforming Ideas into Reality: AI Image Generation at Your Fingertips</h1>
+      <form action="#" class="search-form">
+        <input type="text" placeholder="Enter text to generate stunning images with AI...">
+        <button class="material-symbols-outlined" type="sumbit">search</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+</body>
+</html>
