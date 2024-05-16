@@ -21,6 +21,32 @@ body {
     position: relative;
     top:20px;
 } 
+#home{
+    position: relative;
+    top:20px;
+    left: 700px;
+    font-size: large;
+}
+#contact{
+    position: relative;
+    top:20px;
+    left: 880px;
+    font-size: large;
+}
+#about{
+    position: relative;
+    top:20px;
+    left: 910px;
+    font-size: large;
+}
+#help{
+    position: relative;
+    top:20px;
+    left: 980px;
+    font-size: large;
+}
+
+
 .mainbody{
     position: relative;
     bottom: 18px;
