@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <title>AI Image Generator</title>
+    
+</head>
+
+<body class="page"> 
+    <header>
+        <div class="header">
+             <a id="imgNI">imgNi.com</a>
+        </div>
+    </header>
+        <div class="mainbody">
+            <div class="container">
+                <h1>AI Image Generator</h1>
+                <form id="imageForm">
+                    <label for="imageDescription">Enter image description:</label>
+                    <input type="text" id="imageDescription" placeholder="Describe your image...">
+                    <button type="submit">Generate Images</button>
+                </form>
+                <div class="image-gallery" id="imageGallery">
+                    <!-- Generated images will appear here -->
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="box3">
+    
+                contact us:imgIN.com
+    
+    
+            </div>
+        </footer>
+   
+
+    <script>
+        const form = document.getElementById('imageForm');
+        const gallery = document.getElementById('imageGallery');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const description = document.getElementById('imageDescription').value;
+            const numImages = 5; // You can adjust this as needed
+
+            // Call your AI API here to generate images based on the description
+            // Update the gallery with the generated images (base64 or URLs)
+            // Example: fetchImages(description, numImages);
+
+            // For demonstration purposes, let's add placeholder images
+            const placeholderImage = 'data:image/png;base64,iVBORw0KG...'; // Base64-encoded image
+            for (let i = 0; i < numImages; i++) {
+                const imageCard = document.createElement('div');
+                imageCard.className = 'image-card';
+                const img = document.createElement('img');
+                img.src = placeholderImage;
+                imageCard.appendChild(img);
+                const downloadLink = document.createElement('a');
+                downloadLink.href = placeholderImage;
+                downloadLink.download = `image_${i + 1}.png`;
+                downloadLink.className = 'download-button';
+                downloadLink.textContent = 'Download';
+                imageCard.appendChild(downloadLink);
+                gallery.appendChild(imageCard);
+            }
+        });
+    </script>
+</body>
+</html>
+
+   
+    
