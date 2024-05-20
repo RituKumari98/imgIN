@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>imgIN - Image Scraping Tool</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2874F0" id="themeColor">
+  <title>imgIN - Image Scraping Tool</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">imgIN</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="search-container">
-            <input type="text" placeholder="Enter your search term..." class="search-bar">
-            <button class="generate-button">Generate</button>
+  <header>
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+      <div class="container-fluid">
+        <img class="logo-img" src="assets/images/logo.png" alt="imgIn" width="50px">
+        <a class="navbar-brand logo" href="#">imgIN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Features</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>Contact</span></a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="googleSearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" onclick="googlesearch()">Search</button>
+          </form>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 imgIN. All rights reserved.</p>
-    </footer>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-5 searchBox">
+      <div class="search-container searchbox d-flex justify-content-center mb-4">
+        <input type="text" id="searchInput" class="form-control mr-2" placeholder="Enter your search term...">
+        <button id="searchBtn" class="btn btn-primary">Generate</button>
+      </div>
+    </div>
+  </main>
+  <div class="container">
+    <div id="inputResults"></div>
+    <button id="showMoreBtn" class="d-none">Show More</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 imgIN. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/search.js"></script>
 </body>
+
 </html>
