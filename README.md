@@ -1,7 +1,5 @@
 # imgIN
 
-Join This group to connect with us : https://chat.whatsapp.com/IurxHlwWNEy5rHDrFPvde0
-
 
 <h2>About imgIN</h2>
       <p>imgIN is a cutting-edge web tool designed to simplify the process of image scraping. With its intuitive interface and powerful functionality, imgIN revolutionizes the way users gather images from the web. Whether you're a designer, researcher, or simply someone who appreciates visual content, imgIN offers a seamless solution to extract images from various online sources.</p>
