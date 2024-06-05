@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgIN - Image Scraping Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contact Form Styles */
+        .formbody {
+            padding: 100px 0;
+            background: linear-gradient(0deg, #fae69f 0%, #f1c11a 100%);
+        }
+
+        .formcontainer {
+            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fffad3;
+            box-shadow: 0px -4px 8px rgb(71, 1, 1);
+            border-radius: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: black; /* Darker color for better contrast */
+        }
+
+        .section-title p {
+            font-size: 1.2em;
+            color: black;
+        }
+
+        .contact-form {
+            padding: 20px;
+            background: #fbf6b3;
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgb(117, 0, 0);
+        }
+
+        .contact-form .form-control {
+            width: 97%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #fff08f;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fffdd0;
+        }
+
+        .contact-form .submit {
+            padding: 12px 20px;
+            background: #f1c11a;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-form .submit:hover {
+            background-color: #ffc800;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logo-text">imgIN</div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="flex flex-col md:flex-row">
+                    <li>
+                        <i class="fa-solid fa-house" style="filter:invert(1)"></i>
+                        <a class="active" href="/imgIN/index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-info" style="filter:invert(1)"></i>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list" style="filter:invert(1)"></i>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-at" style="filter:invert(1)"></i>
+                        <a href="/imgIN/contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <div class="formbody">
+        <main>
+            <section id="contact">
+                <div class="formcontainer">
+                    <div class="section-title">
+                        <h1>Get in Touch</h1>
+                        <p>If you have any query or for collaboration</p>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form" action="/send-email" method="POST" onsubmit="sendEmail(); reset(); return false;">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input name="email" type="email" id="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" id="msg" placeholder="Message" rows="6" required></textarea>
+                                </div>
+                                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+                                    <input name="submit" type="submit" class="form-control submit" id="contact-submit" value="SEND MESSAGE">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 imgIN. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            // Your email sending logic here
+            alert('Email sent successfully!');
+        }
+    </script>
+</body>
+</html>
