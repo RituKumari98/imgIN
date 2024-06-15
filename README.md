@@ -62,7 +62,6 @@ Make sure you have Git installed on your system. You can download and install Gi
 4. **Navigate into the cloned repository:**
 
    ```bash
-   Copy code
    cd imgIN
 
 5. **Verifying the Clone**
@@ -70,7 +69,6 @@ Make sure you have Git installed on your system. You can download and install Gi
 After cloning, you can verify the clone by listing the contents of the directory:
 
    ```bash
-   Copy code
    ls
   
 <h2>Get Started with imgIN</h2>
