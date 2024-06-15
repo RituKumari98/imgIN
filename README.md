@@ -16,4 +16,16 @@
       </ul>
     </section>
     <section>
-      <h2>Get Started with imgIN</h2>
+
+## Contribute to this project under GSSoC 2024.
+![image](images\GSSOC IMAGE.png)
+
+
+### What is GSSoC? 🤔 
+
+GirlScript Summer Of Code is a three-month-long Open-Source Program conducted every summer by the Girlscript Foundation. With constant efforts, participants contribute to numerous projects under the extreme guidance of skilled mentors over these months. With such exposure, students begin to contribute to real-world projects from the comfort of their homes. GirlScript Summer Of Code has witnessed active participation over the years, and the 2024 edition aims to carry the legacy with a promising impact.
+
+  Learn more about it [here](https://gssoc.girlscript.tech/)
+  
+----
+
