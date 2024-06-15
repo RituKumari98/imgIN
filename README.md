@@ -18,7 +18,7 @@
     <section>
 
 ## Contribute to this project under GSSoC 2024.
-![image](images\GSSOC IMAGE.png)
+![image](images/GSSOC%20IMAGE.png)
 
 
 ### What is GSSoC? 🤔 
