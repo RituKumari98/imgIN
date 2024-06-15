@@ -70,5 +70,5 @@ After cloning, you can verify the clone by listing the contents of the directory
 
    ```bash
    ls
-  
-<h2>Get Started with imgIN</h2>
+    
+ <h2>Get Started with imgIN</h2>
