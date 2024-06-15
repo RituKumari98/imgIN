@@ -58,21 +58,21 @@ Make sure you have Git installed on your system. You can download and install Gi
 
   Use the following command to clone the repository to your local system:
 
-  ```bash
-  git clone https://github.com/RituKumari98/imgIN.git
+   ```bash
+   git clone https://github.com/RituKumari98/imgIN.git
 
 4. **Navigate into the cloned repository:**
 
-  ```bash
-  Copy code
-  cd imgIN
+   ```bash
+   Copy code
+   cd imgIN
 
 5. **Verifying the Clone**
 
 After cloning, you can verify the clone by listing the contents of the directory:
 
-  ```bash
-  Copy code
-  ls
+   ```bash
+   Copy code
+   ls
   
 <h2>Get Started with imgIN</h2>
