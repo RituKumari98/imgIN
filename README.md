@@ -54,9 +54,7 @@ Make sure you have Git installed on your system. You can download and install Gi
    ```bash
    cd /path/to/your/directory
 
-3. **Clone the Repository**
-
-  Use the following command to clone the repository to your local system:
+3. **Clone the Repository**Use the following command to clone the repository to your local system:
 
    ```bash
    git clone https://github.com/RituKumari98/imgIN.git
